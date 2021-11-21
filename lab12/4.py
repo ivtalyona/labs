@@ -16,10 +16,14 @@ d=['одиннадцать','двенадцать','тринадцать','че�
 
 if b==0:
     for i in range (1,11):
-        for l in range (1,10):
-            if a==i:
-                if c==l:
-                    print (p[i-1],n[l-1])
+        if a==i:
+            if c==0:
+                print (p[i-1])
+            else:
+                for l in range (1,10):
+                    if a==i:
+                        if c==l:
+                            print (p[i-1],n[l-1])
 if b==1:
     for i in range (1,11):
         if a==i:
